@@ -1,6 +1,6 @@
 // Copyright 2021 Manna Harbour
 // https://github.com/manna-harbour/miryoku
-U_MACRO(email, wait-ms = <20>; tap-ms = <20>; <&kp A &kp S &kp H &kp E &kp R &kp M &kp O &kp S &kp H &kp A &kp V> <&kp AT> <&kp G &kp M &kp A &kp I &kp L> <&kp DOT> <&kp C &kp O &kp M>;)
+U_MACRO(email, wait-ms = <20>; tap-ms = <20>; <&kp A &kp S &kp H &kp E &kp R &kp M &kp O &kp S &kp H &kp A &kp V>, <&kp AT>, <&kp G &kp M &kp A &kp I &kp L>, <&kp DOT>, <&kp C &kp O &kp M>;)
 
 #define MIRYOKU_LAYER_CODE \
 U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              &email,             &none,             &none,             &none,             &none,             \
