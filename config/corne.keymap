@@ -112,7 +112,7 @@ macros {
               = <&kp EQUAL &kp EQUAL &kp EQUAL>
               ;        };
   };
-}
+};
 
 #include "../miryoku/custom_config.h"
 #include "../miryoku/mapping/42/corne.h"
