@@ -2,8 +2,8 @@
 // https://github.com/manna-harbour/miryoku
 
 #define MIRYOKU_LAYER_CODE \
-U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              &email,             &none,             &none,             &none,             &none,             \
-&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              &none,            &none,            U_MS_U,            U_MS_R,            &none,              \
+&email,            &beeri_email,      &phone,            &id_number,        U_NA,              &none,             &none,             &none,             &vim_quit_all,             &vim_quit,             \
+&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              &arrow,            &vim_save,            U_MS_U,            U_MS_R,            &none,              \
 U_NA,              &kp RALT,          &u_to_U_SYM,       &u_to_U_MOUSE,     U_NA,              U_WH_L,            U_WH_D,            U_WH_U,            U_WH_R,            U_NU,              \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_BTN2,            U_BTN1,            U_BTN3,            U_NP,              U_NP
 
