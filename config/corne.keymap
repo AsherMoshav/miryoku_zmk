@@ -2,14 +2,13 @@
 // https://github.com/manna-harbour/miryoku
 
 / {
-macros {
+        macros {
         email: email {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <20>;
             tap-ms = <20>;
-            bindings
-              = <&kp A &kp S &kp H &kp E &kp R &kp M &kp O &kp S &kp H &kp A &kp V>
+            bindings = <&kp A &kp S &kp H &kp E &kp R &kp M &kp O &kp S &kp H &kp A &kp V>
               , <&kp AT>
               , <&kp G &kp M &kp A &kp I &kp L>
               , <&kp DOT>
