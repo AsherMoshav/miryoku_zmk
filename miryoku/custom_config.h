@@ -1,9 +1,122 @@
 // Copyright 2021 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
+/ {
+  macros {
+        email: email {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <20>;
+            tap-ms = <20>;
+            bindings
+              = <&kp A &kp S &kp H &kp E &kp R &kp M &kp O &kp S &kp H &kp A &kp V>
+              , <&kp AT>
+              , <&kp G &kp M &kp A &kp I &kp L>
+              , <&kp DOT>
+              , <&kp C &kp O &kp M>
+              ;        };
+
+        beeri_email: beeri_email {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <20>;
+            tap-ms = <20>;
+            bindings
+              = <&kp A &kp S &kp H &kp E &kp R>
+              , <&kp AT>
+              , <&kp B &kp E &kp E &kp R &kp I &kp P &kp R &kp I &kp N &kp T>
+              , <&kp DOT>
+              , <&kp C &kp O>
+              , <&kp DOT>
+              , <&kp I &kp L>
+              ;        };
+
+        phone: phone {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <20>;
+            tap-ms = <20>;
+            bindings
+              = <&kp N0 &kp N5 &kp N0 &kp N7 &kp N5 &kp N4 &kp N9 &kp N9 &kp N6 &kp N4>
+              ;        };
+
+        id_number: id_number {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <20>;
+            tap-ms = <20>;
+            bindings
+              = <&kp N2 &kp N0 &kp N8 &kp N1 &kp N8 &kp N7 &kp N4 &kp N4 &kp N3>
+              ;        };
+
+        vim_save: vim_save {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <20>;
+            tap-ms = <20>;
+            bindings
+              = <&kp ESC &kp COLON &kp W &kp RET>
+              ;        };
+
+        vim_quit: vim_quit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <20>;
+            tap-ms = <20>;
+            bindings
+              = <&kp ESC &kp COLON &kp Q &kp RET>
+              ;        };
+
+        vim_quit_all: vim_quit_all {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <20>;
+            tap-ms = <20>;
+            bindings
+              = <&kp ESC &kp COLON &kp Q &kp A &kp RET>
+              ;        };
+
+        arrow: arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <20>;
+            tap-ms = <20>;
+            bindings
+              = <&kp MINUS &kp GT>
+              ;        };
+
+        double_colon: double_colon {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <20>;
+            tap-ms = <20>;
+            bindings
+              = <&kp COLON &kp COLON>
+              ;        };
+
+        compare: compare {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <20>;
+            tap-ms = <20>;
+            bindings
+              = <&kp EQUAL &kp EQUAL>
+              ;        };
+
+        strict_compare: strict_compare {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <20>;
+            tap-ms = <20>;
+            bindings
+              = <&kp EQUAL &kp EQUAL &kp EQUAL>
+              ;        };
+  };
+}
+
 #define MIRYOKU_LAYER_CODE \
-U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              &kp Q,             U_PST,             U_CPY,             U_CUT,             U_UND,             \
-&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              U_MS_L,            U_MS_D,            U_MS_U,            U_MS_R,            U_NU,              \
+U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              &email,             &beeri_email,             &phone,             &id_number,             &vim_quit,             \
+&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              &arrow,            &vim_save,            U_MS_U,            U_MS_R,            &vim_quit_all,              \
 U_NA,              &kp RALT,          &u_to_U_SYM,       &u_to_U_MOUSE,     U_NA,              U_WH_L,            U_WH_D,            U_WH_U,            U_WH_R,            U_NU,              \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_BTN2,            U_BTN1,            U_BTN3,            U_NP,              U_NP
 
